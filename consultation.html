@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>P4P Coaching – Consultation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <a href="index.html"><img src="p4p.png" alt="P4P Coaching Logo"/></a>
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="consultation.html" class="active-link">Consultation</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- END NAVBAR -->
+  
+  <section class="consultation-page">
+    <div class="consultation-header">
+      <h2>Book a Consultation Call</h2>
+      <p>
+        Ready to discuss your goals, programming, or next steps? 
+        Choose a timeslot that fits your schedule, and let’s strategize.
+      </p>
+    </div>
+    <form class="booking-form">
+      <label for="name">Name</label>
+      <input 
+        type="text" 
+        id="name" 
+        name="name" 
+        placeholder="Your Name"
+        required
+      />
+
+      <label for="weightClass">Weight Class</label>
+      <input 
+        type="text" 
+        id="weightClass" 
+        name="weightClass" 
+        placeholder="e.g. 83kg"
+        required
+      />
+
+      <label for="dateTime">Choose a timeslot</label>
+      <input 
+        type="datetime-local"
+        id="dateTime"
+        name="dateTime"
+        required
+      />
+
+      <label for="description">Additional Info</label>
+      <textarea 
+        id="description" 
+        name="description" 
+        rows="3"
+        placeholder="Anything else Joe should know?"
+      ></textarea>
+
+      <button type="submit">
+        Book Now
+      </button>
+    </form>
+  </section>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> P4P Coaching. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    const yearSpan = document.getElementById('year');
+    if(yearSpan) yearSpan.textContent = new Date().getFullYear();
+
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+    if(hamburger) {
+      hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+      });
+    }
+  </script>
+</body>
+</html>

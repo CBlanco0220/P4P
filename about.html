@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>P4P Coaching – About</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <a href="index.html"><img src="p4p.png" alt="P4P Coaching Logo"/></a>
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active-link">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="consultation.html">Consultation</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="about-section">
+    <div class="about-container">
+      <div class="about-image">
+        <img src="joe.jpg" alt="Joe Borenstein"/>
+      </div>
+      <div class="about-content">
+        <h2>About Joe Borenstein</h2>
+        <p>
+          Joe Borenstein is a full-time powerlifting coach based in Orlando, FL. 
+          As an elite lifter, he holds multiple records — including the highest tested 
+          world-leading total in the 83kg weight class at 900kg. Joe also became the 
+          first ever 83kg athlete to total 900kg, a huge feat in powerlifting.
+        </p>
+        <p>
+          With a degree in Kinesiology from the University of Central Florida, Joe has 
+          been coaching since March 2022 under his brand Pound 4 Pound. His goal is not 
+          only to help athletes achieve their training objectives but also to teach and 
+          inform them about his training philosophies.
+        </p>
+        <p>
+          He prides himself on communication and building real relationships with his athletes, 
+          ensuring they reach their full powerlifting potential.
+        </p>
+        <h3>Accomplishments</h3>
+        <ul>
+          <li>The highest total in the 83kg weight class (865kg tested)</li>
+          <li>3rd highest total in the 74/75kg weight class</li>
+          <li>Top 10 in Dots all-time for men</li>
+          <li>Bachelor’s in Kinesiology</li>
+          <li>USAPL Pro card at age 19</li>
+          <li>Best lifter at High School, Teen, Collegiate, and Junior Nationals</li>
+          <li>Coached athletes to multiple state records and a world record</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> P4P Coaching. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    // Year
+    const yearSpan = document.getElementById('year');
+    if (yearSpan) {
+      yearSpan.textContent = new Date().getFullYear();
+    }
+
+    // Mobile nav
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+    if(hamburger) {
+      hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+      });
+    }
+  </script>
+</body>
+</html>
