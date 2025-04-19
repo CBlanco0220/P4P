@@ -113,8 +113,9 @@ a:hover {
 /* HERO SECTION */
 .hero-section {
   position: relative;
-  min-height: 110vh;
-  margin-top: 60px;
+  /* instead of min‑height:110vh; */
+  height: calc(100vh - 60px);   /* full viewport minus your 60px navbar */
+  margin-top: 60px;             /* push under the fixed header */
   overflow: hidden;
 }
 
@@ -502,9 +503,8 @@ a:hover {
 /* tighten up header + text on mobile */
 @media (max-width: 600px) {
   .consultation-header h2 {
-    font-size: 1.5rem;
-    margin-bottom: 0.75rem;
-    padding: 0 1rem;
+    white-space: normal;
+    word-break: break-word;
   }
   .consultation-header p {
     font-size: 1rem;
@@ -521,12 +521,7 @@ a:hover {
 
 
 .consultation-page {
-  padding: 5rem 1rem 13rem;
-  background: linear-gradient(to top right, #000 0%, #2c2c2c 50%, #dc2626 120%);
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding-top: calc(60px + 2rem);
 }
 .consultation-header {
   text-align: center;
@@ -784,4 +779,5 @@ a:hover {
   .why-p4p-section { background-size: cover !important; }
   .services-hero   { background-size: cover !important; }
 }
+
 
