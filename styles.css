@@ -500,12 +500,8 @@ a:hover {
   border-top: 1px solid rgb(250, 247, 247)
 }
 
-/* tighten up header + text on mobile */
-@media (max-width: 600px) {
-  .consultation-header h2 {
-    white-space: normal;
-    word-break: break-word;
-  }
+
+
   .consultation-header p {
     font-size: 1rem;
     line-height: 1.4;
@@ -771,5 +767,4 @@ a:hover {
   .consultation-header h2 { font-size: 1.75rem; }
   .consultation-header p  { font-size: 1rem; }
 }
-
 
