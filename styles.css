@@ -772,12 +772,4 @@ a:hover {
   .consultation-header p  { font-size: 1rem; }
 }
 
-/*────────────────────  BACKGROUND TWEAKS  ────────────────────*/
-/* ensure no “zoomed” crops on mobile */
-@media (max-width: 768px) {
-  .hero-video      { object-position: center top !important; }
-  .why-p4p-section { background-size: cover !important; }
-  .services-hero   { background-size: cover !important; }
-}
-
 
