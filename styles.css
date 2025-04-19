@@ -513,7 +513,7 @@ a:hover {
   .calendly-container {
     padding: 0 1rem;
   }
-}
+
 
 
 .consultation-page {
@@ -761,10 +761,4 @@ a:hover {
     padding: 1.5rem !important;
     box-shadow: 0 4px 12px rgba(0,0,0,.15) !important;
   }
-  
-  /* CONSULTATION */
-  .consultation-page { padding: 3rem 1rem 8rem !important; }
-  .consultation-header h2 { font-size: 1.75rem; }
-  .consultation-header p  { font-size: 1rem; }
 }
-
