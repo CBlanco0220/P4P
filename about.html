@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>P4P Coaching – About</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet"/>
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <a href="index.html"><img src="p4p.png" alt="P4P Coaching Logo"/></a>
+        </div>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active-link">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="consultation.html">Consultation</a></li>
+        </ul>
+
+        <div class="hamburger" id="hamburger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- END NAVBAR -->
+
+  <!-- ABOUT SECTION -->
+  <section class="about-section">
+    <div class="about-container">
+
+      <!-- Two‑layer image “polaroid” -->
+      <div class="about-image">
+        <img src="joe-main.jpg"  alt="Joe Borenstein primary photo"/>
+  
+      </div>
+
+      <!-- Text card -->
+      <div class="about-content">
+        <h2>About Joe Borenstein</h2>
+
+        <p>
+          Joe Borenstein is a full‑time powerlifting coach based in Orlando, FL.
+          As an elite lifter, he owns multiple records – including the first ever
+          tested 83&nbsp;kg total over 900&nbsp;kg.
+        </p>
+
+        <p>
+          Armed with a Kinesiology degree from the University of Central Florida,
+          Joe launched <strong>Pound&nbsp;4&nbsp;Pound Coaching</strong> in 2022. His mission is to
+          blend science‑backed programming with unmatched communication so every
+          athlete understands <em>why</em> they train the way they do.
+        </p>
+
+        <p>
+          Known for building genuine relationships, Joe keeps lifters laser‑focused
+          on progress while cultivating lasting confidence on and off the platform.
+        </p>
+
+        <h3>Accomplishments</h3>
+        <ul>
+          <li>900&nbsp;kg total – highest ever tested 83&nbsp;kg</li>
+          <li>865&nbsp;kg total – #1 tested 83&nbsp;kg (current record)</li>
+          <li>Top‑10 Dots score (all‑time men)</li>
+          <li>Bachelor’s in Kinesiology</li>
+          <li>USAPL Pro Card at 19 years old</li>
+          <li>Best lifter – HS, Teen, Collegiate &amp; Junior Nationals</li>
+          <li>Coached athletes to multiple state &amp; world records</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+  <!-- END ABOUT SECTION -->
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> P4P Coaching. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    /* dynamic year */
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    /* mobile nav */
+    const hamburger = document.getElementById('hamburger');
+    const navLinks  = document.getElementById('nav-links');
+    hamburger.addEventListener('click', () => navLinks.classList.toggle('active'));
+  </script>
+</body>
+</html>
